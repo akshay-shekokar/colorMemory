@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<head>
+		<title>
+		</title>
+		<link href="Color_Memory.css" rel="stylesheet">
+		</link>
+		<script src="Color_Memory.js">
+		</script>
+	</head>
+	<body >
+		<div class="gameArea">
+			<div class="gameBoard">
+				<div id="card_0_0" data-xpos="0" data-ypos="0" data-card-passed="false" class="card activeCard">
+				</div>
+				<div id="card_1_0" data-xpos="1" data-ypos="0" data-card-passed="false" class="card">
+				</div>
+				<div id="card_2_0" data-xpos="2" data-ypos="0" data-card-passed="false" class="card">
+				</div>
+				<div id="card_3_0" data-xpos="3" data-ypos="0" data-card-passed="false" class="card">
+				</div>
+				<div id="card_0_1" data-xpos="0" data-ypos="1" data-card-passed="false" class="card">
+				</div>
+				<div id="card_1_1" data-xpos="1" data-ypos="1" data-card-passed="false" class="card">
+				</div>
+				<div id="card_2_1" data-xpos="2" data-ypos="1" data-card-passed="false" class="card">
+				</div>
+				<div id="card_3_1" data-xpos="3" data-ypos="1" data-card-passed="false" class="card">
+				</div>
+				<div id="card_0_2" data-xpos="0" data-ypos="2" data-card-passed="false" class="card">
+				</div>
+				<div id="card_1_2" data-xpos="1" data-ypos="2" data-card-passed="false" class="card">
+				</div>
+				<div id="card_2_2" data-xpos="2" data-ypos="2" data-card-passed="false" class="card">
+				</div>
+				<div id="card_3_2" data-xpos="3" data-ypos="2" data-card-passed="false" class="card">
+				</div>
+				<div id="card_0_3" data-xpos="0" data-ypos="3" data-card-passed="false" class="card">
+				</div>
+				<div id="card_1_3" data-xpos="1" data-ypos="3" data-card-passed="false" class="card">
+				</div>
+				<div id="card_2_3" data-xpos="2" data-ypos="3" data-card-passed="false" class="card">
+				</div>
+				<div id="card_3_3" data-xpos="3" data-ypos="3" data-card-passed="false" class="card">
+				</div>
+			</div>
+			<div class="gameDetails">
+				<div class="gameLogo">
+				</div>
+				<div class="gameInfo">
+					Score : <div class="score">0</div><br>
+					Time : <div class="time">0</div> Seconds
+				</div>
+				<div class="restartButton" onclick="game.restart()">
+					Restart
+				</div>
+			</div>
+		</div>
+		<div class="userDetails hideDiv">
+			<table>
+				<tr>
+					<td>Username:
+					</td>
+					<td> <input id="username" type="text" value="username">
+					</td>
+				</tr>
+				<tr>
+					<td>Email: 
+					</td>
+					<td><input id="email" type="email" value="emailField">
+					</td>
+				</tr>
+				<tr colspan="2">
+					<button onclick="game.submitData()">Submit</button>
+				</tr>
+			</table>
+			
+		</div>
+		<script>
+			document.getElementsByTagName("body")[0].addEventListener("keypress", game.keyPressed)
+		</script>
+	</body>
+</html>

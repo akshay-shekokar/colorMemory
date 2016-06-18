@@ -1,0 +1,35 @@
+Memory Game:
+The goal of this work sample is to construct a game called ”Colour Memory”. The game board consists of a 4x4 grid, all in all 16 slots. All slots consists of cards face-down. The player is to flip two of these upwards each round, trying to find equals. If the two cards are equal, the player receives one point, and the cards are removed from the game board. Otherwise, the player loses one point and the cards are turned face-down again. This continues until all pairs have been found.
+After the game is finished, the user would be required to input his/her name and email. User's details and the scores would then be submitted to the database and the user would get notified with the highscores and his position in score rankings.
+
+
+==========================================================================================================================================================================
+Prerequisites:
+
+1.) The game should work in the latest version of Firefox
+2.) The game is suggested to be developed entirely in (X)HTML/JavaScript/CSS
+3.) The game should be controllable by only the arrow keys (to navigate) and enter (to select) (except the operations inside the input field)
+4.) The game should follow the design template illustrated on the last page
+
+
+==========================================================================================================================================================================
+Brownie points (and if time permits):
+1.) Highscores server is suggested to be developed in PHP and mySQL
+2.) Data to be received from server and client side is suggested to be in JSON format
+3.) Applicants are required to use JavaScript to complete the test. Detailed instructions about how to set up the game and server is required.
+
+
+==========================================================================================================================================================================
+Design:
+1.) The game should entirely fit inside a 720x576 area
+2.) The game info area is to contain information about the current game session. Current score for instance. Be creative
+3.) The graphics for the cards and the logotype have been supplied
+4.) All other graphical elements are up for you to decide upon
+5.) The restart button should start a new round when selected
+6.) You have to figure out a way to highlight which screen element is focused, including the restart button
+7.) There has to be a way to signal to the player that the game is over, when all pairs have been found. Ideally, this includes an option to play a new round
+
+
+==========================================================================================================================================================================
+Delivery:
+Your implementation of Colour Memory should be delivered in a compressed archive containing all necessary files and resources. Also, an instruction on how to install and start the game is expected. Alternatively, upload the source code on github or bitbucket and share the public URL.
